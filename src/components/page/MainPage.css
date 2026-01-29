@@ -197,9 +197,8 @@
 
   .right-section {
     width: 100%;
-    min-height: 100vh;
+    min-height: 90%;
   }
-
   /* Header button */
   .right-section button {
     margin-left: 6px;
@@ -256,7 +255,6 @@
     width: 70vw;
   }
 
-  /* Grid */
   .art-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -267,10 +265,5 @@
 
   .main-content h6 {
     font-size: 22px;
-  }
-}
-@media (min-width: 1025px) {
-  .art-grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
