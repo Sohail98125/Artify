@@ -95,7 +95,7 @@ const MainPage = () => {
                     <input type="text" placeholder='Ask Anything' value={query} onChange={(e) => setQuery(e.target.value)} />
                     <button type='submit'>➤</button>
                 </form>
-                <p>This system uses a pyblic API to generate AI-based art search results.</p>
+                <p>This system uses a public API to generate AI-based art search results.</p>
             </section>
         </div>
     )

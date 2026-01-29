@@ -1,197 +1,169 @@
+
 .main-page {
-    display: flex;
-    color: white;
-    width: 100vw;
-    height: 100vh;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #0b0b0b, #151515);
+  color: #fff;
 }
-
 .left-section {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    background-color: #262626;
-    width: 244px;
-    height: 100vh;
-    border-radius: 5px 1px 1px 5px;
+  width: 260px;
+  background: rgba(30, 30, 30, 0.95);
+  border-right: 1px solid #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .new-chat button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    color: white;
-    background-color: #393939;
-    border-radius: 28px;
+  width: 90%;
+  margin: 10px;
+  padding: 12px;
+  background: linear-gradient(135deg, #3a3a3a, #1f1f1f);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .new-chat button:hover {
-    color: white;
-    background-color: rgb(27, 26, 26);
-    transform: rotateX('5deg')
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
-
 .chat-history {
-    margin-top: 2px;
-    justify-content: left;
-    align-self: flex-start;
-    height: 100vh;
-    padding: 5px;
-    overflow-y: auto;
-    overflow-x:hidden;
-
-}
-.chat-history ol li{
-    cursor: pointer;
-    gap :2px ;
-    width: 100%;
-    padding: 3px;
-    padding-right: 50px;
-}
-.chat-history ol li:hover {
-    background-color:#393939;
-    border-radius: 10px;
-   
-}
-
-.left-section hr {
-    width: 244px;
-    height: 0.5px;
-    color: rgb(12, 13, 13);
-    margin-top: 2px;
-    place-content: start;
-    align-items: start;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.footer p {
-    font-size: large;
-    font-weight: 500;
-}
-
-.right-section {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    border-radius: 1px 5px 5px 1px;
-    background-color: #393939;
-    width: 100%;
-    height: 100vh;
-     justify-content: space-between;
-}
-
-.right-section button {
-    display: flex;
-    justify-content: center;
-    align-self: flex-start;
-    padding: 15px;
-    margin: 5px;
-    margin-left: 15px;
-    margin-bottom: 5px;
-    border: none;
-    color: white;
-    background-color: #282525;
-    cursor: pointer;
-    border-radius: 28px;
-}
-
-.right-section button:hover {
-    color: white;
-    background-color: rgb(19, 18, 18);
-    transform: rotateX('5deg')
-}
-
-.main-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex: 1;
-    overflow-y:auto;
-    margin-top: 2px;
-    box-sizing: border-box;
-    padding: 10px;
-
-}
-
-.main-content h6 {
-    display: flex;
-    font-size: xx-large;
-    font-weight: 500;
-    color: white;
-     align-items: center;
-    justify-content: center;
-    align-self: center; 
-    margin-top: 200px;
-} 
-
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom:5px;
-    margin-top: 10px;
-}
-.form input{
-    width: 50vw;
-    padding: 15px;
-    border-radius: 25px;
-    border: 2px solid gray;
-    font-size: large;
-}
-.right-section p {
-    margin-bottom: 10px;
-    margin-top: 1px;
-    font-size: x-small;
-    color: gray;
-}
-
-.art-grid{
-  display: grid;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 20px;
-  height:100%;
+  flex: 1;
   width: 100%;
-}
-
-.art-card{
-  display: flex;
-  align-items: center;
-  gap: 20px;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  overflow-y: auto;
 }
 
-.art-card h4 {
-  flex: 1; 
-  font-weight: bold;
+.chat-history ol {
+  list-style: none;
+  padding: 0;
+}
+
+.chat-history li {
+  /* padding: 10px 12px; */
+  border-radius: 10px;
+  margin-bottom: 6px;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chat-history li:hover {
+  background: #2b2b2b;
+  color: #fff;
+}
+.footer {
+  padding: 10px;
+  color: #777;
+  font-size: 13px;
+}
+.right-section {
+  flex: 1;
+  background: radial-gradient(circle at top, #1a1a1a, #0f0f0f);
+  display: flex;
+  flex-direction: column;
+}
+.right-section > button {
+  margin: 12px;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #222, #111);
+  border-radius: 30px;
+  color: white;
+    cursor: pointer;
+  transition: all 0.3s ease;
+}
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content h6 {
+  margin-top: 30vh;
+  font-size: 26px;
+  color: #aaa;
+  text-align: center;
+}
+.art-grid {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.art-card {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(30,30,30,0.9);
+  border: 1px solid #2a2a2a;
+  transition: all 0.3s ease;
+}
+
+.art-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 .art-card img {
-   width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 5px;
+  width: 180px;
+  border-radius: 12px;
   object-fit: cover;
 }
-@media (max-width: 480px) {
 
-  /* Hide sidebar */
+.art-card h4 {
+  font-size: 18px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+}
+
+.form input {
+  width: 55vw;
+  max-width: 700px;
+  padding: 14px 18px;
+  border-radius: 30px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.form button {
+  margin-left: 10px;
+  padding: 0 20px;
+  border-radius: 50%;
+  border: none;
+  background: #2a2a2a;
+  color: white;
+  cursor: pointer;
+}
+.right-section p {
+  font-size: 11px;
+  color: #666;
+  text-align: center;
+  padding-bottom: 8px;
+}
+@media (max-width: 420px) {
+
+  .main-page {
+    flex-direction: column;
+  }
+
+  /* Sidebar gone */
   .left-section {
     display: none;
   }
@@ -200,72 +172,95 @@
     width: 100%;
     min-height: 100vh;
   }
-  /* Header button */
-  .right-section button {
-    margin-left: 6px;
-    padding: 7px 10px;
-    font-size: 10px;
+
+  .right-section > button {
+    font-size: 14px;
+    padding: 8px 14px;
+    margin: 8px;
   }
 
-  /* Search input */
-  .form input {
-    width: 62vw;
-    padding: 8px;
-    font-size: 10px;
+  .main-content {
+    padding-bottom: 90px; /* space for input */
   }
 
-  /* Center empty text */
   .main-content h6 {
-    font-size: 15px;
-    text-align: center;
-    margin-top:160px;
+    margin-top: 22vh;
+    font-size: 18px;
+    padding: 0 10px;
   }
 
-  /* Art grid */
-  .art-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* Art card */
+  /* Cards */
   .art-card {
-    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
   }
 
   .art-card img {
-    height: 140px;
     width: 100%;
-    object-fit: cover;
+    max-height: 220px;
   }
 
   .art-card h4 {
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
   }
-  .right-section p{
-    font-size: 7px;
+
+  /* Bottom input */
+  .form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #0f0f0f;
+    padding: 8px;
+    border-top: 1px solid #222;
+  }
+
+  .form input {
+    width: 78%;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .form button {
+    padding: 10px 14px;
+  }
+
+  .right-section p {
+    display: none;
   }
 }
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 421px) and (max-width: 600px) {
 
-  /* Sidebar smaller */
+  .left-section {
+    display: none;
+  }
+
+  .main-content h6 {
+    font-size: 20px;
+  }
+
+  .art-card img {
+    width: 100%;
+    max-height: 260px;
+  }
+
+  .form input {
+    width: 80%;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+
   .left-section {
     width: 180px;
   }
 
-  /* Input */
-  .form input {
-    width: 70vw;
-  }
-
-  .art-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .art-card img {
-    height: 200px;
+    width: 140px;
   }
 
-  .main-content h6 {
-    font-size: 22px;
+  .form input {
+    width: 65vw;
   }
 }
