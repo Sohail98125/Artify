@@ -130,13 +130,14 @@
 
 .main-content h6 {
     display: flex;
-    margin-top:200px;
     font-size: xx-large;
     font-weight: 500;
     color: white;
-    align-items: center;
+     align-items: center;
     justify-content: center;
-}
+    align-self: center; 
+    margin-top: 200px;
+} 
 
 .form {
     display: flex;
@@ -197,7 +198,7 @@
 
   .right-section {
     width: 100%;
-    min-height: 90%;
+    min-height: 100vh;
   }
   /* Header button */
   .right-section button {
@@ -217,6 +218,7 @@
   .main-content h6 {
     font-size: 15px;
     text-align: center;
+    margin-top:160px;
   }
 
   /* Art grid */
